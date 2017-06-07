@@ -1,0 +1,19 @@
+---
+applications:
+- name: firehose-to-syslog-binary-v3.0
+  memory: 256MB
+  disk_quota: 512MB
+  instances: 2
+  path: ./firehose-to-syslog
+  buildpack: binary_buildpack
+  health-check-type: process
+  no-route: true
+env:
+  API_ENDPOINT: https://api.systemdomain
+  DOPPLER_ENDPOINT: wss://doppler.systemdomain:port
+  EVENTS: LogMessage
+  FIREHOSE_CLIENT_ID: <firehose client id>
+  FIREHOSE_CLIENT_SECRET: <firehose client secret>
+  FIREHOSE_SUBSCRIPTION_ID: <firehose subscription id>
+  FH_KEEP_ALIVE: 60s
+  SYSLOG_ENDPOINT: <syslog server ip:port>
