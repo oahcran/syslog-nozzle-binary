@@ -15,8 +15,8 @@
 Follow [Use Client id / Client Secret](https://github.com/cloudfoundry-community/firehose-to-syslog#push-as-an-app-to-cloud-foundry) to creat UAA client
 
 ```
-uaac target https://uaa.[your cf system domain] --skip-ssl-validation
-uaac token client get admin -s [your admin-secret]
+uaac target https://uaa.[cf system domain] --skip-ssl-validation
+uaac token client get admin -s [admin-client-secret]
 uaac client add firehose-to-syslog \
   --name firehose-to-syslog \
   --secret [your_client_secret] \
