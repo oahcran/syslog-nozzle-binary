@@ -6,8 +6,8 @@
 ## Deployment
 
 1. Clone this repo
-2. Download [Linux x64 Binary](https://github.com/cloudfoundry-community/firehose-to-syslog/releases/tag/3.0.0), rename execution file to `firehose-to-syslog`and put into _firehose-to-syslog_ folder, set correct execute permission. 
-3. Update `manifest.yml` with proper values. 
+2. Download [Linux x64 Binary](https://github.com/cloudfoundry-community/firehose-to-syslog/releases/tag/3.3.2), rename execution file to `firehose-to-syslog`and put into _firehose-to-syslog_ folder, set correct execute permission.
+3. Update `manifest.yml` with proper values.
 4. Run `cf push`.
 
 ## UAA Client
@@ -36,5 +36,3 @@ doppler: {"LogMessage":149,"by_sec_Events":0,"cf_origin":"firehose","event_type"
 
 
 ## Reference
-
-

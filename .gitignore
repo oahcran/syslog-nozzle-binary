@@ -1,3 +1,3 @@
 # ignore  binary at folder firehose-to-syslog
 firehose-to-syslog/firehose-to-syslog
-manifest_lab.yml
+manifest_*.yml
