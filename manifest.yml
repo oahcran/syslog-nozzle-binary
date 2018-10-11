@@ -1,6 +1,6 @@
 ---
 applications:
-- name: firehose-to-syslog-binary-v5.1.0
+- name: firehose-to-syslog-binary
   memory: 256MB
   disk_quota: 512MB
   instances: 2
