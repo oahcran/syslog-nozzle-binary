@@ -1,6 +1,6 @@
 ---
 applications:
-- name: firehose-to-syslog-binary-v3.3.2
+- name: firehose-to-syslog-binary-v5.1.0
   memory: 256MB
   disk_quota: 512MB
   instances: 2
@@ -17,3 +17,7 @@ env:
   FIREHOSE_SUBSCRIPTION_ID: <firehose subscription id>
   FH_KEEP_ALIVE: 60s
   SYSLOG_ENDPOINT: <syslog server ip:port>
+  ORGS: ORG
+  CERT_PEM_PATH: /home/vcap/app/cert.pem
+  LOGS_BUFFER_SIZE: 10000
+  CC_PULL_TIME: 120s

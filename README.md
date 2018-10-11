@@ -6,13 +6,14 @@
 ## Deployment
 
 1. Clone this repo
-2. Download [Linux x64 Binary](https://github.com/cloudfoundry-community/firehose-to-syslog/releases/tag/3.3.2), rename execution file to `firehose-to-syslog`and put into _firehose-to-syslog_ folder, set correct execute permission.
-3. Update `manifest.yml` with proper values.
-4. Run `cf push`.
+2. Download [Linux x64 Binary](https://github.com/cloudfoundry-community/firehose-to-syslog/releases/tag/3.3.2), rename execution file to `firehose-to-syslog` and put into _firehose-to-syslog_ folder, set correct execute permission.
+3. Get right cert pem file to _firehose-to-syslog_ folder to support _tcp+tls_ protocol to remote syslog server.
+4. Update `manifest.yml` with proper values.
+5. Run `cf push`.
 
 ## UAA Client
 
-Follow [Use Client id / Client Secret](https://github.com/cloudfoundry-community/firehose-to-syslog#push-as-an-app-to-cloud-foundry) to creat UAA client
+Follow [Use Client id / Client Secret](https://github.com/cloudfoundry-community/firehose-to-syslog#push-as-an-app-to-cloud-foundry) to create UAA client
 
 ```
 uaac target https://uaa.[cf system domain] --skip-ssl-validation

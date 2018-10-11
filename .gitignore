@@ -1,3 +1,4 @@
 # ignore  binary at folder firehose-to-syslog
 firehose-to-syslog/firehose-to-syslog
+firehose-to-syslog/*.pem
 manifest_*.yml
